@@ -33,13 +33,16 @@ class MyApp extends StatelessWidget {
             child: Text('Money Amount Here')      
             ),
             Align(alignment: Alignment(0, -0.2),
-            child: Text('Result goes here')
+            child: Image.asset('assets/images/placeholder.jpg')
             ),
             Align(alignment: Alignment(0, 0.3),
             child: FlatButton(onPressed: null, child: Text('ROLL'),),
             ),
             Align(alignment: Alignment(0, 0.7),
-            child: Text('Rarest Result goes here')
+            child: Image.asset('assets/images/placeholder2.jpg')
+            ),
+            Align(alignment: Alignment(0, 0.85),
+            child: Text('Rarest Result')
             ),
         ],
         ),

@@ -21,7 +21,10 @@ class PageTwo extends StatelessWidget {
             Align(alignment: Alignment(-1, -1),
             child: Text('Money Amount Here')      
             ),
-            Align(alignment: Alignment(0, 0.3),
+            Align(alignment: Alignment(0.1, -0.5),
+            child: Image.asset('assets/images/placeholder3.png')   
+            ),
+            Align(alignment: Alignment(0, 0.7),
             child: FlatButton(onPressed: null, child: Text('GET MONEY'), color: Colors.yellow),
             ),
         ],

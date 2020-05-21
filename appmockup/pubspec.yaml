@@ -46,6 +46,9 @@ flutter:
     - assets/images/placeholder.jpg
     - assets/images/placeholder2.jpg
     - assets/images/placeholder3.png
+    - assets/images/flutterfarmerlogodisplay.png
+    - assets/images/backgroundimage.jpg
+    - assets/images/moneymines.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

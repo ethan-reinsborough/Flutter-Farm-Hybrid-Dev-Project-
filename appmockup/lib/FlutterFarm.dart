@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
   class HomeRoute extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
@@ -33,10 +34,10 @@ class MyApp extends StatelessWidget {
             decoration: BoxDecoration(
             image: DecorationImage(image: AssetImage("assets/images/backgroundimage.jpg"), fit: BoxFit.cover),
             ),),
-            Align(alignment: Alignment(-0.9, -0.93),
+            Align(alignment: Alignment(-0.9, -0.6),
             child: Text('Money')      
             ),
-            Align(alignment: Alignment(-1, -0.9),
+            Align(alignment: Alignment(-1, -0.97),
             child: Image.asset('assets/images/flutterfarmerlogodisplay.png')
             ),
             Align(alignment: Alignment(0, -0.2),

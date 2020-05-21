@@ -17,6 +17,8 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  imagebutton: ^0.0.6
+  audioplayers: ^0.13.2
   flutter:
     sdk: flutter
 
@@ -45,10 +47,14 @@ flutter:
   assets:     
     - assets/images/placeholder.jpg
     - assets/images/placeholder2.jpg
-    - assets/images/placeholder3.png
+    - assets/images/coin.png
+    - assets/images/coinpressed.png
     - assets/images/flutterfarmerlogodisplay.png
     - assets/images/backgroundimage.jpg
     - assets/images/moneymines.png
+    - assets/images/moneymineslogodisplay.png
+    - assets/sfx/coin.wav
+    - assets/sfx/coin2.mp3
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -5,7 +5,7 @@ import 'globals.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
-
+import 'package:audioplayers/audio_cache.dart';
 import './models/gacha.dart';
 
 void main() => runApp(MyApp());
@@ -79,6 +79,10 @@ class _HomeRouteState extends State<HomeRoute> {
                   ),
                 ),
                 Align(
+                  alignment: Alignment(0, -0.75),
+                  child: Text(imageDesc)
+                ),
+                Align(
                     alignment: Alignment(-1, -1.05),
                     child: Image.asset(
                         'assets/images/flutterfarmerlogodisplay.png')),
@@ -87,7 +91,7 @@ class _HomeRouteState extends State<HomeRoute> {
                     child: Image.asset(drawImage)),
                 Align(
                   alignment: Alignment(0, 0.69),
-                  child: FlatButton(
+                  child: FlatButton( color: Colors.blue[200], textColor: Colors.white,
                     onPressed: () {
                       List<Gacha> drawpool = List<Gacha>();
                       for(var gacha in _gacha){
@@ -95,9 +99,12 @@ class _HomeRouteState extends State<HomeRoute> {
                           drawpool.add(gacha);
                         }
                       }
+                      final player = AudioCache();
                       Random rnd2 = new Random();
                       int result = rnd2.nextInt(99);
                       drawImage = 'assets/images/${drawpool[result].title}.jpg';
+                      if(drawpool[result].rarity == "5")player.play('sfx/SuperRare.mp3');
+                      imageDesc = drawpool[result].title + '    Rarity: ' + drawpool[result].rarity;
                       setState(() {
                       });
                     },

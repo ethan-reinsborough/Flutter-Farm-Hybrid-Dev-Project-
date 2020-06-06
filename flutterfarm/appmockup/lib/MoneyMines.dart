@@ -31,12 +31,6 @@ class _PageTwoState extends State<PageTwo> {
             backgroundColor: Colors.blue,
             ),
             ),
-             Align(alignment: Alignment(-0.7, -0.5),
-            child: Text("coins")
-            ),
-            Align(alignment: Alignment(-1.1, -0.79),
-            child: Image.asset('assets/images/borderoutline.png', height:40, width:150)   
-            ),
             Align(alignment: Alignment(-1, -0.97),
             child: Image.asset('assets/images/moneymineslogodisplay.png')
             ),
